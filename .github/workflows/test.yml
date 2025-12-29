@@ -7,43 +7,10 @@ on:
     branches: [ main, develop ]
 
 jobs:
-  test-ubuntu:
-    name: Test on Ubuntu
+  syntax-check:
+    name: Syntax Check
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
       - name: Validate bash syntax
-        run: |
-          bash -n erp-server-setup.sh
-          echo "✓ Bash syntax valid"
-      
-      - name: Verify script structure
-        run: |
-          echo "Verifying script structure..."
-          bash -n erp-server-setup.sh
-          echo "✓ Script structure valid"
-
-  test-distribution-compat:
-    name: Test Distribution Compatibility
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      
-      - name: Check script file
-        run: |
-          echo "Checking file integrity..."
-          file erp-server-setup.sh
-          head -1 erp-server-setup.sh
-          echo "✓ Script file valid"
-
-  coverage:
-    name: Code Coverage
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      
-      - name: Generate coverage report
-        run: |
-          echo "Coverage: Script covers all major functions"
-          echo "✓ Coverage baseline established"
+        run: bash -n erp-server-setup.sh

@@ -2,43 +2,23 @@ name: Release
 
 on:
   push:
-    tags:
-      - 'v*'
+    tags: [ 'v*' ]
 
 jobs:
-  release:
+  create-release:
     name: Create Release
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       
-      - name: Extract version from tag
-        id: tag_name
-        run: echo "version=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
-      
-      - name: Validate CHANGELOG
-        run: |
-          if grep -q "CHANGELOG" CHANGELOG.md; then
-            echo "✓ CHANGELOG.md exists and is valid"
-          else
-            echo "⚠ CHANGELOG validation skipped"
-          fi
-      
-      - name: Create Release
+      - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           files: |
             erp-server-setup.sh
             README.md
             CHANGELOG.md
-            PPA_GUIDE.md
-            PACKAGING.md
-          draft: false
-          prerelease: false
+            LICENSE
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Update documentation
-        run: |
-          echo "Release ${{ steps.tag_name.outputs.version }} published"
