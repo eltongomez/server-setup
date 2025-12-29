@@ -13,11 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - name: Run bash tests
+      - name: Validate bash syntax
         run: |
-          echo "Running tests on Ubuntu..."
-          bash erp-server-setup.sh || true
-          echo "✓ Script executed without fatal errors"
+          bash -n erp-server-setup.sh
+          echo "✓ Bash syntax valid"
       
       - name: Verify script structure
         run: |
