@@ -33,7 +33,7 @@ jobs:
         uses: nosborn/github-action-markdown-cli@v3.3.0
         with:
           files: .
-          configFile: .markdownlintrc
+          config_file: .markdownlintrc
 
   security:
     name: Security Scan
