@@ -5,6 +5,14 @@ Todas as mudanças notáveis neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/),
 e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR/).
 
+## [Unreleased]
+
+### Added
+- 📖 GitHub Pages com Jekyll para documentação interativa
+- 📄 Arquivo de índice de documentação centralizado (docs/index.md)
+- 🔄 Workflow de deploy automático para GitHub Pages
+- 📦 Gemfile para gerenciamento de dependências Jekyll
+
 ## [1.0.0] - 2025-12-28
 
 ### Added
