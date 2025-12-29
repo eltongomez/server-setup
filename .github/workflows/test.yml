@@ -19,12 +19,12 @@ jobs:
       - name: Run bash tests
         run: |
           echo "Running tests on Ubuntu..."
-          bash scripts/erp-server-setup.sh --dry-run || true
+          bash erp-server-setup.sh --dry-run || true
       
       - name: Verify script structure
         run: |
           echo "Verifying script structure..."
-          bash -n scripts/erp-server-setup.sh
+          bash -n erp-server-setup.sh
           echo "✓ Script structure valid"
 
   test-distribution-compat:
@@ -36,7 +36,7 @@ jobs:
       - name: Test function definitions
         run: |
           echo "Testing function definitions..."
-          source scripts/erp-server-setup.sh 2>/dev/null || true
+          source erp-server-setup.sh 2>/dev/null || true
           echo "✓ All functions defined"
 
   coverage:

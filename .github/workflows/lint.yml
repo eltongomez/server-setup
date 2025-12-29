@@ -15,13 +15,13 @@ jobs:
       
       - name: Check bash syntax
         run: |
-          bash -n scripts/erp-server-setup.sh
+          bash -n erp-server-setup.sh
           echo "✓ Bash syntax validation passed"
       
       - name: ShellCheck
         uses: ludeeus/action-shellcheck@master
         with:
-          scandir: './scripts'
+          scandir: '.'
 
   markdown:
     name: Markdown Lint
