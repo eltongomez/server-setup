@@ -1,6 +1,6 @@
-theme: jekyll-theme-slate
+theme: jekyll-theme-minimal
 title: ERP Server Setup
-description: Script profissional de configuração automatizada para servidores Linux em ambiente de produção
+description: Script profissional de configuração automatizada para servidores Linux
 url: https://eltongomez.github.io/server-setup
 baseurl: /server-setup
 logo: 
@@ -23,16 +23,25 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# Navigation
+nav:
+  - title: Início
+    url: /server-setup/
+  - title: Quick Start
+    url: /server-setup/docs/
+  - title: Documentação
+    url: /server-setup/docs/
+  - title: GitHub
+    url: https://github.com/eltongomez/server-setup
+
 # Exclude files
 exclude:
   - .gitignore
   - .github/
-  - README.md
   - CHANGELOG.md
   - CONTRIBUTING.md
   - GIT_SETUP_GUIDE.md
   - CONFIGURATIONS.md
-  - QUICKSTART.md
   - MAINTENANCE_GUIDE.md
   - PROFESSIONALIZATION_REPORT.md
   - package.json
@@ -41,3 +50,4 @@ exclude:
   - tests/
   - .editorconfig
   - .markdownlintrc
+
