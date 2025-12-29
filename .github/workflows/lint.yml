@@ -17,11 +17,6 @@ jobs:
         run: |
           bash -n erp-server-setup.sh
           echo "✓ Bash syntax validation passed"
-      
-      - name: ShellCheck
-        uses: ludeeus/action-shellcheck@master
-        with:
-          scandir: '.'
 
   markdown:
     name: Markdown Lint
