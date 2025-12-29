@@ -74,6 +74,55 @@ sudo ./erp-server-setup.sh
 
 ---
 
+## 📥 Download & Instalação
+
+### ⭐ Opção 1: Download Rápido (Recomendado)
+```bash
+# Baixar apenas o script
+wget https://github.com/eltongomez/server-setup/raw/main/erp-server-setup.sh
+chmod +x erp-server-setup.sh
+sudo ./erp-server-setup.sh
+```
+
+### 📦 Opção 2: Clone do Repositório
+```bash
+# Clonar repositório completo
+git clone https://github.com/eltongomez/server-setup.git
+cd server-setup
+chmod +x erp-server-setup.sh
+sudo ./erp-server-setup.sh
+```
+
+### 🔗 Opção 3: Instalar via Curl
+```bash
+# Download com curl
+curl -fsSL https://github.com/eltongomez/server-setup/raw/main/erp-server-setup.sh -o erp-server-setup.sh
+chmod +x erp-server-setup.sh
+sudo ./erp-server-setup.sh
+```
+
+### 📥 Downloads Diretos
+- **[Script Principal](https://github.com/eltongomez/server-setup/raw/main/erp-server-setup.sh)** - erp-server-setup.sh
+- **[Código Completo (ZIP)](https://github.com/eltongomez/server-setup/archive/refs/heads/main.zip)** - Repositório completo
+- **[Releases](https://github.com/eltongomez/server-setup/releases)** - Versões oficiais com release notes
+
+---
+
+## ✅ Verificação Pós-Download
+
+```bash
+# Verificar sintaxe do script
+bash -n erp-server-setup.sh
+
+# Ver versão
+head -5 erp-server-setup.sh
+
+# Ver permissões
+ls -lh erp-server-setup.sh
+```
+
+---
+
 ## 📚 Documentação Completa
 
 ### Para Começar
