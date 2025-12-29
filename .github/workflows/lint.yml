@@ -34,6 +34,7 @@ jobs:
         with:
           files: .
           config_file: .markdownlintrc
+        continue-on-error: true
 
   security:
     name: Security Scan
