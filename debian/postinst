@@ -1,0 +1,21 @@
+#!/bin/bash
+set -e
+
+# Create log directory if it doesn't exist
+if [ ! -d /var/log/erp-setup ]; then
+    mkdir -p /var/log/erp-setup
+fi
+
+# Make the script executable (just in case)
+chmod 755 /usr/bin/erp-server-setup
+
+# Create symbolic link for easier access
+if [ ! -h /usr/local/bin/erp-server-setup ]; then
+    ln -s /usr/bin/erp-server-setup /usr/local/bin/erp-server-setup
+fi
+
+echo "erp-server-setup has been installed successfully!"
+echo "Usage: sudo erp-server-setup"
+echo "       sudo erp-server-setup --help"
+
+#DEBHELPER#

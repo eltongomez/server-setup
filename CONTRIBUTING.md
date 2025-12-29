@@ -53,7 +53,7 @@ Para sugerir uma feature ou melhoria:
 #### Antes de começar
 
 1. **Fork o repositório**
-2. **Clone seu fork**: `git clone https://github.com/seu-usuario/server-setup.git`
+2. **Clone seu fork**: `git clone https://github.com/eltongomez/server-setup.git`
 3. **Crie uma branch**: `git checkout -b fix/seu-feature`
 
 #### Padrões de Código
@@ -179,9 +179,9 @@ tail -f /var/log/erp-setup/setup-*.log
 
 ## Perguntas?
 
-- 📧 Email: infra@seu-dominio.com
-- 💬 Issues: GitHub Issues
-- 📖 Wiki: GitHub Wiki
+- 📧 Email: eltongslima@hotmail.com
+- 💬 Issues: [GitHub Issues](https://github.com/eltongomez/server-setup/issues)
+- 📖 Wiki: [GitHub Wiki](https://github.com/eltongomez/server-setup/wiki)
 
 ---
 

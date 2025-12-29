@@ -1,0 +1,5 @@
+# Lintian overrides for erp-server-setup
+# Reference: https://manpages.debian.org/lintian-overrides
+
+# Scripts for bash are expected to be executable but don't need shebang validation
+# since they're invoked explicitly

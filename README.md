@@ -53,7 +53,7 @@ Para instalar o script em seu servidor, execute os seguintes comandos:
 
 ```bash
 # Fazer download do script
-wget https://seu-servidor.com/erp-server-setup.sh
+wget https://github.com/eltongomez/server-setup/raw/main/erp-server-setup.sh
 
 # Tornar o script executável
 chmod +x erp-server-setup.sh

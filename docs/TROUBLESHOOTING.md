@@ -391,9 +391,9 @@ bash -n script.sh
 ## Contatos de Suporte
 
 - **Documentação**: [README.md](../README.md)
-- **Issue Tracker**: GitHub Issues
-- **Email**: support@seu-dominio.com
-- **Slack**: #infra-support
+- **Issue Tracker**: [GitHub Issues](https://github.com/eltongomez/server-setup/issues)
+- **Email**: eltongslima@hotmail.com
+- **Repositório**: [github.com/eltongomez/server-setup](https://github.com/eltongomez/server-setup)
 
 ---
 

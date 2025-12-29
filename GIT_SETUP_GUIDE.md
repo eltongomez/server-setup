@@ -27,7 +27,7 @@
 
 # 4. Adicionar remote ao repositório local
 cd /Volumes/DATA/infra/server-setup
-git remote add origin https://github.com/seu-usuario/server-setup.git
+git remote add origin https://github.com/eltongomez/server-setup.git
 
 # 5. Renomear branch (GitHub usa 'main' por padrão)
 git branch -M main
@@ -47,7 +47,7 @@ git push -u origin develop
 # 3. Não inicializar com arquivos
 
 cd /Volumes/DATA/infra/server-setup
-git remote add origin https://gitlab.com/seu-usuario/server-setup.git
+git remote add origin https://github.com/eltongomez/server-setup.git
 git push -u origin main
 git push -u origin develop
 ```

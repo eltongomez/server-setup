@@ -262,6 +262,7 @@ sudo auditd -l  # Listar regras
 
 ---
 
-**Contato de Segurança**: security@seu-dominio.com  
+**Contato de Segurança**: eltongslima@hotmail.com  
+**Repositório**: [github.com/eltongomez/server-setup](https://github.com/eltongomez/server-setup)  
 **Última revisão**: 2025-12-28  
 **Classificação**: Documento Público

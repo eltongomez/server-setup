@@ -1,0 +1,8 @@
+erp-server-setup.sh usr/bin/erp-server-setup
+README.md usr/share/doc/erp-server-setup/
+CHANGELOG.md usr/share/doc/erp-server-setup/
+CONTRIBUTING.md usr/share/doc/erp-server-setup/
+docs/ARCHITECTURE.md usr/share/doc/erp-server-setup/
+docs/SECURITY.md usr/share/doc/erp-server-setup/
+docs/TROUBLESHOOTING.md usr/share/doc/erp-server-setup/
+LICENSE usr/share/doc/erp-server-setup/

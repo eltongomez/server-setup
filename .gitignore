@@ -40,6 +40,19 @@ dist/
 build/
 *.egg-info/
 
+# Debian/PPA build artifacts
+debian/erp-server-setup/
+*.deb
+*.changes
+*.dsc
+*.build
+*.buildinfo
+*.orig.tar.gz
+*.orig.tar.xz
+*.debian.tar.gz
+*.debian.tar.xz
+.debhelper.log
+
 # Configuration sensitive files (keep templates)
 !config.example.*
 config.*.local

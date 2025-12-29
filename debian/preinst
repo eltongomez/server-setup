@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+# Pre-installation checks
+if [ ! -x /bin/bash ]; then
+    echo "Error: bash is required but not found"
+    exit 1
+fi
+
+#DEBHELPER#

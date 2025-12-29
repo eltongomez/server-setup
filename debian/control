@@ -1,0 +1,38 @@
+Source: erp-server-setup
+Section: admin
+Priority: optional
+Maintainer: Elton Gomez <eltongslima@hotmail.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.1
+Homepage: https://github.com/eltongomez/server-setup
+Vcs-Git: https://github.com/eltongomez/server-setup.git
+Vcs-Browser: https://github.com/eltongomez/server-setup
+Rules-Requires-Root: no
+
+Package: erp-server-setup
+Architecture: all
+Depends: bash (>= 4.0), ${misc:Depends}
+Recommends: sudo
+Suggests: ufw, fail2ban, htop, git
+Description: Automated professional server configuration and hardening
+ This package provides an interactive bash script for automated configuration,
+ security hardening, and monitoring setup on Linux servers.
+ .
+ Features:
+  - Interactive menu-driven configuration
+  - SSH security hardening
+  - Firewall setup (UFW)
+  - Fail2Ban protection
+  - Password policy enforcement
+  - Automatic security updates
+  - Kernel hardening
+  - Monitoring tools installation
+  - Backup system configuration
+  - Detailed logging and reporting
+ .
+ Supported distributions:
+  - Ubuntu 18.04+
+  - Debian 10+
+  - CentOS 7+
+  - RHEL 7+
+  - Fedora 30+

@@ -1,0 +1,14 @@
+erp-server-setup (1.0.0-1) focal; urgency=medium
+
+  * Initial release
+  * Interactive bash script for server configuration
+  * SSH hardening support
+  * UFW firewall configuration
+  * Fail2Ban integration
+  * Password policy enforcement
+  * Automatic security updates
+  * Kernel hardening
+  * Comprehensive logging
+  * Multi-distribution support (Ubuntu, Debian, CentOS, RHEL, Fedora)
+
+ -- Elton Gomez <eltongslima@hotmail.com>  Mon, 29 Dec 2025 00:00:00 +0000

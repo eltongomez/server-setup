@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+# Enable all hardening flags
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# Override for bash script (no compilation needed)
+override_dh_auto_build:
+	# Validate bash syntax
+	bash -n erp-server-setup.sh
+	@echo "✓ Bash syntax validation passed"
+
+override_dh_auto_test:
+	# Run tests
+	@echo "Running tests..."
+	bash -n erp-server-setup.sh
+	@echo "✓ Tests passed"
+
+override_dh_auto_install:
+	# Install script and documentation
+	dh_auto_install
+	install -D -m 0755 erp-server-setup.sh debian/erp-server-setup/usr/bin/erp-server-setup
+	install -D -m 0644 README.md debian/erp-server-setup/usr/share/doc/erp-server-setup/README.md
+	install -D -m 0644 CHANGELOG.md debian/erp-server-setup/usr/share/doc/erp-server-setup/CHANGELOG.md
+	install -D -m 0644 CONTRIBUTING.md debian/erp-server-setup/usr/share/doc/erp-server-setup/CONTRIBUTING.md
+	install -D -m 0644 docs/ARCHITECTURE.md debian/erp-server-setup/usr/share/doc/erp-server-setup/ARCHITECTURE.md
+	install -D -m 0644 docs/SECURITY.md debian/erp-server-setup/usr/share/doc/erp-server-setup/SECURITY.md
+	install -D -m 0644 docs/TROUBLESHOOTING.md debian/erp-server-setup/usr/share/doc/erp-server-setup/TROUBLESHOOTING.md
+	install -D -m 0644 LICENSE debian/erp-server-setup/usr/share/doc/erp-server-setup/LICENSE

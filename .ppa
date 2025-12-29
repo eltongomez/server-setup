@@ -1,0 +1,30 @@
+# PPA Configuration for erp-server-setup
+# This file is used for publishing to Launchpad PPA
+
+[PPA]
+Name = erp-server-setup
+Version = 1.0.0
+Distribution = focal,jammy,noble,bionic,xenial
+Section = admin
+Priority = optional
+
+[Maintainer]
+Name = Elton Gomez
+Email = eltongslima@hotmail.com
+Website = https://github.com/eltongomez/server-setup
+
+[Description]
+Short = Automated professional server configuration and hardening
+Long = Interactive bash script for Linux server setup with security hardening,
+       monitoring configuration, and automated backups. Supports Ubuntu, Debian,
+       CentOS, RHEL, and Fedora distributions.
+
+[Build]
+Requires = bash (>= 4.0)
+Recommends = sudo
+Suggests = ufw, fail2ban, htop, git
+
+[Upstream]
+Repository = https://github.com/eltongomez/server-setup.git
+Branch = main
+License = MIT

@@ -19,7 +19,7 @@ jobs:
           echo "✓ Bash syntax validation passed"
       
       - name: ShellCheck
-        uses: ludeeus/action-shellcheck@master
+        uses: ludeeus/action-shellcheck@v3.5.0
         with:
           scandir: '.'
 
@@ -33,7 +33,7 @@ jobs:
         uses: nosborn/github-action-markdown-cli@v3.3.0
         with:
           files: .
-          config_file: .markdownlintrc
+          configFile: .markdownlintrc
 
   security:
     name: Security Scan
@@ -46,6 +46,8 @@ jobs:
         with:
           scan-type: 'fs'
           scan-ref: '.'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   licensing:
     name: Check Licensing
