@@ -27,7 +27,9 @@ jobs:
           files: |
             erp-server-setup.sh
             README.md
-            QUICKSTART.md
+            CHANGELOG.md
+            PPA_GUIDE.md
+            PACKAGING.md
           draft: false
           prerelease: false
           generate_release_notes: true

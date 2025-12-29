@@ -19,7 +19,7 @@ jobs:
       - name: Install build dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y dpkg-dev debhelper dh-exec
+          sudo apt-get install -y dpkg-dev debhelper devscripts fakeroot
       
       - name: Validate bash syntax
         run: bash -n erp-server-setup.sh
