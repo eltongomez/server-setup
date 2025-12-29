@@ -1,0 +1,39 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Extract version from tag
+        id: tag_name
+        run: echo "::set-output name=version::${GITHUB_REF#refs/tags/}"
+      
+      - name: Validate CHANGELOG
+        run: |
+          grep -q "${{ steps.tag_name.outputs.version }}" CHANGELOG.md
+          echo "✓ Version in CHANGELOG.md"
+      
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            scripts/erp-server-setup.sh
+            README.md
+            QUICKSTART.md
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Update documentation
+        run: |
+          echo "Release ${{ steps.tag_name.outputs.version }} published"

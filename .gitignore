@@ -1,0 +1,50 @@
+# Logs
+*.log
+logs/
+*.swp
+*.swo
+*~
+
+# Backups
+*.bak
+*.backup
+*.tmp
+/backups/
+/temp/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.iml
+*.sublime-*
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Test coverage
+.coverage
+htmlcov/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Configuration sensitive files (keep templates)
+!config.example.*
+config.*.local
+
+# Node (if applicable)
+node_modules/
+package-lock.json
+yarn.lock

@@ -1,0 +1,54 @@
+{
+  "name": "erp-server-setup",
+  "version": "1.0.0",
+  "description": "Automated professional server configuration and hardening script for Linux servers hosting ERP applications",
+  "main": "scripts/erp-server-setup.sh",
+  "scripts": {
+    "lint": "bash -n scripts/erp-server-setup.sh",
+    "test": "bash scripts/erp-server-setup.sh --dry-run",
+    "start": "sudo bash scripts/erp-server-setup.sh"
+  },
+  "keywords": [
+    "linux",
+    "server",
+    "security",
+    "hardening",
+    "erp",
+    "automation",
+    "bash",
+    "devops",
+    "infrastructure"
+  ],
+  "author": "ERP Infrastructure Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-repo/server-setup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seu-repo/server-setup/issues"
+  },
+  "homepage": "https://github.com/seu-repo/server-setup#readme",
+  "engines": {
+    "bash": ">=4.0",
+    "node": ">=12.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "shellcheck": "^0.8.0",
+    "bats": "^1.5.0"
+  },
+  "supportedDistributions": [
+    "Ubuntu 18.04+",
+    "Debian 10+",
+    "CentOS 7+",
+    "RHEL 7+",
+    "Fedora 30+"
+  ],
+  "modules": [
+    "Security (SSH, Firewall, Fail2Ban, Passwords, Kernel Hardening)",
+    "Monitoring (System tools, Log rotation)",
+    "Backup (Automated backups with scheduling)",
+    "System (Service management, Optimization)"
+  ]
+}

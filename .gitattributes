@@ -1,0 +1,38 @@
+# Git Attributes Configuration
+# Normaliza line endings e atributos de arquivo por tipo
+
+# Auto normalize line endings for all text files
+* text=auto
+
+# Documentação
+*.md text eol=lf
+*.txt text eol=lf
+
+# Scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+*.fish text eol=lf
+
+# Config files
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.conf text eol=lf
+*.config text eol=lf
+.editorconfig text eol=lf
+.gitignore text eol=lf
+.shellcheckrc text eol=lf
+.markdownlintrc text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.zip binary
+*.tar binary
+*.gz binary
+
+# Linguagem-specific
+Makefile text eol=lf

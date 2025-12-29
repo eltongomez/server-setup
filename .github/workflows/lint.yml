@@ -1,0 +1,63 @@
+name: Code Quality Checks
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  bash-syntax:
+    name: Check Bash Syntax
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Check bash syntax
+        run: |
+          bash -n scripts/erp-server-setup.sh
+          echo "✓ Bash syntax validation passed"
+      
+      - name: ShellCheck
+        uses: ludeeus/action-shellcheck@master
+        with:
+          scandir: './scripts'
+
+  markdown:
+    name: Markdown Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Markdown lint
+        uses: nosborn/github-action-markdown-cli@v3.3.0
+        with:
+          files: .
+          config_file: .markdownlintrc
+
+  security:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: '.'
+
+  licensing:
+    name: Check Licensing
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Check for LICENSE file
+        run: test -f LICENSE
+      
+      - name: Check for CHANGELOG
+        run: test -f CHANGELOG.md
+      
+      - name: Check for Contributing guide
+        run: test -f CONTRIBUTING.md

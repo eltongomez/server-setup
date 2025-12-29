@@ -1,0 +1,5 @@
+# ShellCheck configuration
+# Disable certain warnings that don't apply to this project
+
+# Ignore SC1091 (Cannot follow non-constant source)
+# Ignore SC2181 (Check exit code)

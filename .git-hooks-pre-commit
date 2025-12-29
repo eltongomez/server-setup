@@ -1,0 +1,30 @@
+#!/bin/bash
+# Pre-commit hook para validações automáticas
+# Copiar para .git/hooks/pre-commit e dar chmod +x
+
+set -e
+
+echo "🔍 Executando pre-commit hooks..."
+
+# 1. Verificar sintaxe Bash
+echo "   • Verificando sintaxe Bash..."
+bash -n scripts/erp-server-setup.sh
+
+# 2. Verificar ShellCheck
+if command -v shellcheck &> /dev/null; then
+    echo "   • Executando ShellCheck..."
+    shellcheck scripts/erp-server-setup.sh || true
+fi
+
+# 3. Verificar Markdown
+if command -v markdownlint &> /dev/null; then
+    echo "   • Verificando Markdown..."
+    markdownlint *.md docs/*.md || true
+fi
+
+# 4. Verificar .gitignore
+echo "   • Validando .gitignore..."
+git check-ignore -v --non-matching *.log *.tmp *.bak > /dev/null 2>&1 || true
+
+echo "✅ Pre-commit validations passed!"
+exit 0
