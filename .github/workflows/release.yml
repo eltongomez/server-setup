@@ -19,7 +19,7 @@ jobs:
         with:
           tag: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
-          body: Release notes automatically generated
+          bodyFile: CHANGELOG.md
           draft: false
           prerelease: false
           allowUpdates: true
