@@ -1,0 +1,43 @@
+theme: jekyll-theme-slate
+title: ERP Server Setup
+description: Script profissional de configuração automatizada para servidores Linux em ambiente de produção
+url: https://eltongomez.github.io/server-setup
+baseurl: /server-setup
+logo: 
+
+# Metadata
+author:
+  name: Elton Gomez
+  email: eltongslima@hotmail.com
+  github: eltongomez
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude files
+exclude:
+  - .gitignore
+  - .github/
+  - README.md
+  - CHANGELOG.md
+  - CONTRIBUTING.md
+  - GIT_SETUP_GUIDE.md
+  - CONFIGURATIONS.md
+  - QUICKSTART.md
+  - MAINTENANCE_GUIDE.md
+  - PROFESSIONALIZATION_REPORT.md
+  - package.json
+  - debian/
+  - scripts/
+  - tests/
+  - .editorconfig
+  - .markdownlintrc
