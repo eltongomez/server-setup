@@ -5,22 +5,22 @@ Bem-vindo à documentação completa do **ERP Server Setup** - um script profiss
 ## 📚 Documentação Disponível
 
 ### Começando Rápido
-- **[QUICKSTART.md](../QUICKSTART.md)** - Guia rápido em 5 minutos para começar
-- **[README.md](../README.md)** - Visão geral completa do projeto e guia de uso
+- **[QUICKSTART.md](https://github.com/eltongomez/server-setup/blob/main/QUICKSTART.md)** - Guia rápido em 5 minutos para começar
+- **[README.md](https://github.com/eltongomez/server-setup/blob/main/README.md)** - Visão geral completa do projeto e guia de uso
 
 ### Documentação Detalhada
-- **[ARCHITECTURE.md](ARCHITECTURE.md)** - Arquitetura do script e componentes internos
-- **[SECURITY.md](SECURITY.md)** - Guia completo de segurança e hardening
-- **[CONFIGURATIONS.md](../CONFIGURATIONS.md)** - Guia detalhado de configuração
-- **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Resolução de problemas comuns
+- **[ARCHITECTURE.md](https://github.com/eltongomez/server-setup/blob/main/docs/ARCHITECTURE.md)** - Arquitetura do script e componentes internos
+- **[SECURITY.md](https://github.com/eltongomez/server-setup/blob/main/docs/SECURITY.md)** - Guia completo de segurança e hardening
+- **[CONFIGURATIONS.md](https://github.com/eltongomez/server-setup/blob/main/CONFIGURATIONS.md)** - Guia detalhado de configuração
+- **[TROUBLESHOOTING.md](https://github.com/eltongomez/server-setup/blob/main/docs/TROUBLESHOOTING.md)** - Resolução de problemas comuns
 
 ### Guias de Contribuição
-- **[CONTRIBUTING.md](../CONTRIBUTING.md)** - Como contribuir para o projeto
-- **[GIT_SETUP_GUIDE.md](../GIT_SETUP_GUIDE.md)** - Guia de setup Git e workflow
+- **[CONTRIBUTING.md](https://github.com/eltongomez/server-setup/blob/main/CONTRIBUTING.md)** - Como contribuir para o projeto
+- **[GIT_SETUP_GUIDE.md](https://github.com/eltongomez/server-setup/blob/main/GIT_SETUP_GUIDE.md)** - Guia de setup Git e workflow
 
 ### Manutenção e Release
-- **[CHANGELOG.md](../CHANGELOG.md)** - Histórico de versões e mudanças
-- **[MAINTENANCE_GUIDE.md](../MAINTENANCE_GUIDE.md)** - Guia de manutenção do servidor
+- **[CHANGELOG.md](https://github.com/eltongomez/server-setup/blob/main/CHANGELOG.md)** - Histórico de versões e mudanças
+- **[MAINTENANCE_GUIDE.md](https://github.com/eltongomez/server-setup/blob/main/MAINTENANCE_GUIDE.md)** - Guia de manutenção do servidor
 
 ## 🚀 Características Principais
 

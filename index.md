@@ -70,7 +70,7 @@ sudo ./erp-server-setup.sh
 # Escolha opção 1 para Configuração Completa
 ```
 
-**Primeiro uso?** Veja [Quick Start Guide](../QUICKSTART.md)
+**Primeiro uso?** Veja [Quick Start Guide](https://github.com/eltongomez/server-setup/blob/main/QUICKSTART.md)
 
 ---
 
@@ -127,18 +127,18 @@ ls -lh erp-server-setup.sh
 
 ### Para Começar
 - **[Quick Start Guide](../QUICKSTART.md)** - 5 minutos para começar
-- **[README Completo](../README.md)** - Guia detalhado
+- **[README Completo](https://github.com/eltongomez/server-setup/blob/main/README.md)** - Guia detalhado
 
 ### Documentação Técnica
-- **[Arquitetura](docs/ARCHITECTURE.md)** - Componentes e design
-- **[Segurança](docs/SECURITY.md)** - Best practices de hardening
-- **[Configurações](../CONFIGURATIONS.md)** - Guia completo de parâmetros
-- **[Troubleshooting](docs/TROUBLESHOOTING.md)** - Resolvendo problemas
+- **[Arquitetura](https://github.com/eltongomez/server-setup/blob/main/docs/ARCHITECTURE.md)** - Componentes e design
+- **[Segurança](https://github.com/eltongomez/server-setup/blob/main/docs/SECURITY.md)** - Best practices de hardening
+- **[Configurações](https://github.com/eltongomez/server-setup/blob/main/CONFIGURATIONS.md)** - Guia completo de parâmetros
+- **[Troubleshooting](https://github.com/eltongomez/server-setup/blob/main/docs/TROUBLESHOOTING.md)** - Resolvendo problemas
 
 ### Para Contribuidores
-- **[Contributing](../CONTRIBUTING.md)** - Como contribuir
-- **[Git Setup](../GIT_SETUP_GUIDE.md)** - Workflow Git
-- **[Changelog](../CHANGELOG.md)** - Histórico de versões
+- **[Contributing](https://github.com/eltongomez/server-setup/blob/main/CONTRIBUTING.md)** - Como contribuir
+- **[Git Setup](https://github.com/eltongomez/server-setup/blob/main/GIT_SETUP_GUIDE.md)** - Workflow Git
+- **[Changelog](https://github.com/eltongomez/server-setup/blob/main/CHANGELOG.md)** - Histórico de versões
 
 ---
 
@@ -171,7 +171,7 @@ ls -lh erp-server-setup.sh
 
 ## 📄 Licença
 
-Licenciado sob [MIT License](../LICENSE)
+Licenciado sob [MIT License](https://github.com/eltongomez/server-setup/blob/main/LICENSE)
 
 ---
 
