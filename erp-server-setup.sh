@@ -256,8 +256,14 @@ EOF
         
         # Validar configuração
         if sshd -t 2>/dev/null; then
-            systemctl restart sshd || systemctl restart ssh
-            print_message success "SSH configurado com sucesso na porta ${ssh_port}"
+            # Tentar reiniciar SSH (compatível com diferentes ambientes)
+            if systemctl restart sshd 2>/dev/null || systemctl restart ssh 2>/dev/null; then
+                print_message success "SSH configurado com sucesso na porta ${ssh_port}"
+            else
+                # Em alguns ambientes (WSL2, containers), o serviço pode não estar disponível
+                print_message warning "SSH configurado, mas não foi possível reiniciar o serviço (pode estar desabilitado)"
+                print_message info "Reinicie manualmente ou aguarde o próximo boot: sudo systemctl restart ssh"
+            fi
         else
             print_message error "Erro na configuração SSH. Restaurando backup..."
             cp "${BACKUP_DIR}/sshd_config.backup-"* /etc/ssh/sshd_config 2>/dev/null || true
