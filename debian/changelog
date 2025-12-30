@@ -1,3 +1,13 @@
+erp-server-setup (1.0.1-1) focal; urgency=medium
+
+  * Bug fix release
+  * Fix: Create log directory before first log output (#1)
+  * Fix: Handle SSH service restart gracefully in WSL2/containers (#2)
+  * Improved error messages for better diagnostics
+  * Better environment compatibility
+
+ -- Elton Gomez <eltongslima@hotmail.com>  Mon, 30 Dec 2025 00:00:00 +0000
+
 erp-server-setup (1.0.0-1) focal; urgency=medium
 
   * Initial release

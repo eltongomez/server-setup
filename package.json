@@ -1,6 +1,6 @@
 {
   "name": "erp-server-setup",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automated professional server configuration and hardening script for Linux servers hosting ERP applications",
   "main": "scripts/erp-server-setup.sh",
   "scripts": {
