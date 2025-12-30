@@ -2,7 +2,7 @@
 
 ################################################################################
 # Script de Configuração Automatizada de Servidores
-# Versão: 1.0.0
+# Versão: 1.0.1
 # Descrição: Configura segurança, monitoramento e backup para servidores
 # Data: Dezembro 2025
 ################################################################################

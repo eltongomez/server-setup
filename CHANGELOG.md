@@ -7,6 +7,18 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Unreleased]
 
+## [1.0.1] - 2025-12-30
+
+### Fixed
+- 🐛 **Issue #1**: Criar diretório de log antes de primeira tentativa de escrita
+  - O script tentava escrever logs antes de criar `/var/log/erp-setup`
+  - Agora cria diretórios automaticamente na inicialização
+- 🐛 **Issue #2**: Melhorar tratamento de erro ao reiniciar SSH
+  - Serviço SSH falhava ao reiniciar em ambientes WSL2/containers mas exibia mensagem de sucesso
+  - Agora valida corretamente e oferece instruções de reinicialização manual quando necessário
+  - Suporta diferentes nomes de serviço (`sshd` vs `ssh`)
+- 🔧 Tratamento robusto de erros para compatibilidade com múltiplos ambientes
+
 ### Added
 - 📖 GitHub Pages com Jekyll para documentação interativa
 - 📄 Arquivo de índice de documentação centralizado (docs/index.md)
