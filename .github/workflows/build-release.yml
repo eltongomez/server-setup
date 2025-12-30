@@ -1,0 +1,46 @@
+name: Build Debian Package on Release
+
+on:
+  release:
+    types: [ published ]
+
+permissions:
+  contents: write
+
+jobs:
+  build-deb:
+    name: Build Debian Package
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref_name }}
+      
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y debhelper devscripts build-essential
+      
+      - name: Build Debian package
+        run: |
+          mkdir -p build
+          cd build
+          cp -r ../debian .
+          cp ../erp-server-setup.sh .
+          dpkg-deb --build --root-owner-group . erp-server-setup_${{ github.ref_name }}_all.deb
+          ls -lah *.deb
+      
+      - name: Upload artifacts to release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: build/*.deb
+          tag_name: ${{ github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Display build summary
+        run: |
+          echo "✅ Debian package built successfully!"
+          echo "📦 Package: erp-server-setup_${{ github.ref_name }}_all.deb"
+          echo "📍 Released in: ${{ github.server_url }}/${{ github.repository }}/releases/tag/${{ github.ref_name }}"
