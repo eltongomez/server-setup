@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://github.com/eltongomez/server-setup#documentation
+    about: "Need help? Check out our documentation"
+  - name: 🤝 Discussions
+    url: https://github.com/eltongomez/server-setup/discussions
+    about: "Have a question? Start a discussion with the community"
+  - name: 💬 Community Chat
+    url: https://github.com/eltongomez/server-setup/discussions
+    about: "Join our community to chat and get help"
+  - name: 📖 QUICKSTART Guide
+    url: https://github.com/eltongomez/server-setup/blob/main/QUICKSTART.md
+    about: "Get started quickly with our 5-minute guide"
+  - name: 🔍 Troubleshooting
+    url: https://github.com/eltongomez/server-setup/blob/main/docs/TROUBLESHOOTING.md
+    about: "Common issues and how to resolve them"

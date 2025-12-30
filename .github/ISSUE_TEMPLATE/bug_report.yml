@@ -1,0 +1,180 @@
+name: 🐛 Bug Report
+description: Report a bug to help us improve
+title: "[BUG] "
+labels: ["bug", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! Please provide as much detail as possible.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm the following before proceeding.
+      options:
+        - label: I have searched for existing issues and found none
+          required: true
+        - label: I am using the latest version of erp-server-setup
+          required: true
+        - label: I have read the documentation
+          required: false
+
+  - type: dropdown
+    id: distro
+    attributes:
+      label: Linux Distribution
+      description: What distribution are you running?
+      options:
+        - Ubuntu 24.04 LTS (Noble)
+        - Ubuntu 22.04 LTS (Jammy)
+        - Ubuntu 20.04 LTS (Focal)
+        - Ubuntu 18.04 LTS (Bionic)
+        - Debian 12 (Bookworm)
+        - Debian 11 (Bullseye)
+        - CentOS 7
+        - RHEL 7
+        - Fedora 38+
+        - Other (please specify)
+    validations:
+      required: true
+
+  - type: textarea
+    id: distro-other
+    attributes:
+      label: Other Distribution
+      description: If you selected "Other", please specify your distribution and version
+      placeholder: "e.g., Arch Linux, Alpine, etc."
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component Affected
+      description: Which part of the script is affected?
+      options:
+        - SSH Configuration
+        - Firewall (UFW)
+        - Fail2Ban
+        - Password Policy
+        - Automatic Updates
+        - Kernel Hardening
+        - Monitoring Tools
+        - Backup
+        - Logging
+        - Multiple Components
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 Description
+      description: Provide a clear and concise description of the bug
+      placeholder: |
+        Describe what happened:
+        - Expected behavior
+        - Actual behavior
+        - Steps to reproduce
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔍 Steps to Reproduce
+      description: Exact steps to reproduce the issue
+      placeholder: |
+        1. Run the script with command: `sudo ./erp-server-setup.sh`
+        2. Select option: `X`
+        3. Configure with settings: `Y`
+        4. Observe the error: `Z`
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ Expected Behavior
+      description: What should happen instead?
+      placeholder: "The script should..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ Actual Behavior
+      description: What actually happened?
+      placeholder: "The script..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: error
+    attributes:
+      label: 🚨 Error Messages
+      description: Paste any error messages or logs (wrap in backticks)
+      placeholder: |
+        ```
+        Error output here...
+        ```
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 🖥️ Environment Information
+      description: |
+        Run these commands and paste the output:
+        ```bash
+        uname -a
+        bash --version
+        sudo -V
+        ```
+      placeholder: |
+        ```
+        Linux hostname 5.15.0-91-generic #101-Ubuntu SMP Tue Nov 14 13:29:11 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+        GNU bash, version 5.1.16(1)-release (x86_64-pc-linux-gnu)
+        Sudo version 1.9.13p3
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📋 Relevant Logs
+      description: Paste any relevant log files (wrap in backticks)
+      placeholder: |
+        ```
+        /var/log/auth.log entries
+        /var/log/syslog entries
+        Script logs
+        ```
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 📎 Additional Context
+      description: Add any other context about the problem
+      placeholder: |
+        - Modifications made to the script?
+        - Custom configurations?
+        - Recent system changes?
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: I agree to follow the Code of Conduct
+          required: true

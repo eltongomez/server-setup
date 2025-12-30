@@ -1,0 +1,119 @@
+name: ✨ Feature Request
+description: Suggest an idea for this project
+title: "[FEATURE] "
+labels: ["enhancement", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an idea to improve erp-server-setup! Please provide as much detail as possible.
+
+  - type: checkboxes
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: Please confirm the following before proceeding.
+      options:
+        - label: I have searched for existing feature requests and found none
+          required: true
+        - label: I have read the README and documentation
+          required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Feature Category
+      description: What category does your feature request fall under?
+      options:
+        - Security
+        - Monitoring & Logging
+        - Backup & Recovery
+        - Automation
+        - User Interface
+        - Documentation
+        - Performance
+        - Compatibility
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🤔 Is your feature request related to a problem?
+      description: Describe the problem you're trying to solve
+      placeholder: |
+        I'm always frustrated when...
+        Currently, the script doesn't support...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 💡 Proposed Solution
+      description: Describe the solution you'd like
+      placeholder: |
+        The feature should:
+        1. Do X
+        2. Support Y
+        3. Allow Z
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 Alternative Solutions
+      description: Describe any alternative solutions or features you've considered
+      placeholder: |
+        - Alternative approach 1
+        - Alternative approach 2
+    validations:
+      required: false
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: 📝 Use Case
+      description: Describe your use case or scenario where this feature would be helpful
+      placeholder: |
+        This would be useful for:
+        - Scenario 1
+        - Scenario 2
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would improve the project
+        - High - Critical improvement needed
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 📎 Additional Context
+      description: Add any other context, screenshots, or examples
+      placeholder: |
+        - Related to issue #X
+        - Similar to project Y
+        - Reference documentation link
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Code of Conduct
+      options:
+        - label: I agree to follow the Code of Conduct
+          required: true
