@@ -7,11 +7,32 @@ e este projeto adere ao [Versionamento Semântico](https://semver.org/lang/pt-BR
 
 ## [Unreleased]
 
-### Added
-- 📖 GitHub Pages com Jekyll para documentação interativa
-- 📄 Arquivo de índice de documentação centralizado (docs/index.md)
-- 🔄 Workflow de deploy automático para GitHub Pages
-- 📦 Gemfile para gerenciamento de dependências Jekyll
+### [1.1.0] - Planejado (Março 2026)
+
+#### P0 - Features Críticas
+- 🔧 Modularização do código em múltiplos arquivos (scripts/core, scripts/modules)
+- 🧪 Testes automatizados com BATS (cobertura ≥ 80%)
+- 📊 Relatórios avançados em HTML/JSON com dashboard
+- 🔄 Integração com Prometheus/Node Exporter para monitoramento
+
+#### P1 - Features Altas
+- 🔔 Sistema de notificações via Slack/Discord/Webhook
+- 📋 Modo de auditoria estendido com rastreamento completo
+- 🔐 Logging remoto via syslog para compliance
+
+#### P2 - Features Médias (v1.2.0)
+- 🌐 Interface web de gerenciamento (dashboard)
+- 🚀 API REST para automação e integração
+- 📱 Suporte para diferentes perfis de aplicação
+
+#### P3 - Features Baixas (v1.2.0+)
+- 🍎 Suporte para macOS e BSD
+- ☸️ Otimizações para Kubernetes
+
+### Documentação Adicional
+- 📚 [ROADMAP.md](ROADMAP.md) - Roadmap completo do projeto
+- 🏗️ Architecture Decision Records (ADR) para design decisions
+- 🧪 Teste strategy e cobertura de testes
 
 ## [1.0.1] - 2025-12-30
 
