@@ -1005,6 +1005,10 @@ main() {
     # Verificar se está rodando como root
     check_root
     
+    # Criar diretório de logs IMEDIATAMENTE (antes de qualquer output de log)
+    mkdir -p "$LOG_DIR" "$BACKUP_DIR" 2>/dev/null || true
+    chmod 750 "$LOG_DIR" "$BACKUP_DIR" 2>/dev/null || true
+    
     # Mostrar banner
     show_banner
     
