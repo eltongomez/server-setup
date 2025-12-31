@@ -1,7 +1,7 @@
 # ERP Server Setup
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub version](https://img.shields.io/badge/version-1.0.0-green.svg)]()
+[![GitHub version](https://img.shields.io/badge/version-1.0.1-green.svg)]()
 [![Bash 4.0+](https://img.shields.io/badge/bash-4.0%2B-blue.svg)]()
 [![Supported Distros](https://img.shields.io/badge/distros-5-brightgreen.svg)](#-distribuições-suportadas)
 [![Documentation](https://img.shields.io/badge/docs-complete-success.svg)](docs/)
